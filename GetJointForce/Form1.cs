@@ -180,7 +180,7 @@ namespace GetJointForce
 
                     tr.Abort();
                 }
-                polltime = (int)NUD_Time.Value * 1000;
+                polltime = (int)(NUD_Time.Value * 1000);
                 bExit = false;
                 tr = new Thread(new ThreadStart(Poll));
                 tr.Start();
